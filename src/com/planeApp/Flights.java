@@ -1,27 +1,29 @@
 package com.planeApp;
 
+import java.util.ArrayList;
+
 public class Flights {
-    private String source;
-    private String destination;
+    private String flight;
 
-    public Flights(String source, String destination) {
-        this.source = source;
-        this.destination = destination;
+    public Flights(String flight) {
+        this.flight = flight;
     }
 
-    public String getSource() {
-        return source;
+    public String getFlight() {
+        return flight;
     }
 
-    public void setSource(String source) {
-        this.source = source;
+    public void setFlight(String flight) {
+        this.flight = flight;
     }
 
-    public String getDestination() {
-        return destination;
-    }
-
-    public void setDestination(String destination) {
-        this.destination = destination;
+    @Override
+    public String toString() {
+        return "Flights {" +
+                "flight='" + flight + '\'' +
+                '}';
     }
 }
+
+
+

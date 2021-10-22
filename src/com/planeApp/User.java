@@ -1,20 +1,19 @@
 package com.planeApp;
 
-import java.math.BigInteger;
-
 public class User {
     private String name;
     private String email;
-    private BigInteger phoneNumber;
-    private int ID;
-    private BigInteger passport;
+    private float phoneNumber;
+    private String id;
+    private Passport passport;
 
-    public User(String name, String email, BigInteger phoneNumber, int ID, BigInteger passport) {
+
+    public User(String name, String email, float phoneNumber, String id, Passport passportNumber) {
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
-        this.ID = ID;
-        this.passport = passport;
+        this.id = id;
+        this.passport = passportNumber;
     }
 
     public String getName() {
@@ -33,27 +32,23 @@ public class User {
         this.email = email;
     }
 
-    public BigInteger getPhoneNumber() {
+    public float getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(BigInteger phoneNumber) {
+    public void setPhoneNumber(float phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
-    public int getID() {
-        return ID;
+    public String getID() {
+        return id;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
-    }
-
-    public BigInteger getPassport() {
+    public Passport getPassport() {
         return passport;
     }
 
-    public void setPassport(BigInteger passport) {
+    public void setPassport(Passport passport) {
         this.passport = passport;
     }
 }
