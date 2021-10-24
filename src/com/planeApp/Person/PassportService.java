@@ -1,4 +1,4 @@
-package com.planeApp;
+package com.planeApp.Person;
 
 public class PassportService {
 }

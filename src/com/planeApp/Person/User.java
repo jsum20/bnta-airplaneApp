@@ -1,19 +1,22 @@
-package com.planeApp;
+package com.planeApp.Person;
+
+import java.math.BigInteger;
+import java.util.UUID;
 
 public class User {
     private String name;
     private String email;
-    private float phoneNumber;
+    private String phoneNumber;
     private String id;
-    private Passport passport;
+    private int passport;
 
 
-    public User(String name, String email, float phoneNumber, String id, Passport passportNumber) {
+    public User(String name, String email, String phoneNumber, int passport, String id) {
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.id = id;
-        this.passport = passportNumber;
+        this.passport = passport;
     }
 
     public String getName() {
@@ -32,23 +35,19 @@ public class User {
         this.email = email;
     }
 
-    public float getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(float phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getID() {
-        return id;
-    }
-
-    public Passport getPassport() {
+    public int getPassport() {
         return passport;
     }
 
-    public void setPassport(Passport passport) {
+    public void setPassport(int passport) {
         this.passport = passport;
     }
 }

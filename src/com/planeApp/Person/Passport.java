@@ -1,4 +1,6 @@
-package com.planeApp;
+package com.planeApp.Person;
+
+import com.planeApp.Person.Nationality;
 
 public class Passport {
     private int passportNumber;
