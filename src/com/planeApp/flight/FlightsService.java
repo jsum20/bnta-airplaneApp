@@ -35,9 +35,7 @@ public class FlightsService {
         Flights f = new Flights(flightNumber, origin, destination);
         flights.add(f); // adding flight details as an array into flights array list
 
-
-
-        BookingSaved.flightDetails(flightNumber, origin, destination, UUID.randomUUID().toString());
+        BookingSaved.flightDetails(flightNumber, origin, destination);
     }
 
 //    public void addFullBookedFlight() {

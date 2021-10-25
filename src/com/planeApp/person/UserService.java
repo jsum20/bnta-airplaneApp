@@ -3,14 +3,12 @@ package com.planeApp.person;
 import com.planeApp.booking.BookingSaved;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-import java.util.UUID;
+import java.util.*;
 
 
 public class UserService {
     List<User> user = new ArrayList<>();
+    List<String> id = new ArrayList<>();
 
     public void makeUser() throws IOException {
 
@@ -31,11 +29,19 @@ public class UserService {
         System.out.println("What is your passport number?");
         int passport = Scanner4.nextInt();
 
-        User P = new User(name, email, phoneNumber, passport, UUID.randomUUID().toString());
-        user.add(P);
+        User p = new User(name, email, phoneNumber, passport, Collections.singletonList(UUID.randomUUID().toString()));
+        user.add(p);
 
-        BookingSaved.userDetails(name, email, phoneNumber, passport, UUID.randomUUID().toString());
 
+        BookingSaved.userDetails(name, email, phoneNumber, passport, p.getId());
+
+    }
+
+    public void getID() {
+        for (User userDetails : user) {
+            id.add(userDetails.getId());
+        }
+        System.out.println(id);
     }
 //    public void bookFlight(Flights flights) {
 //        // display all flights

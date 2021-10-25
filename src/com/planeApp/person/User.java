@@ -1,5 +1,7 @@
 package com.planeApp.person;
 
+import java.util.List;
+import java.util.Random;
 import java.util.UUID;
 
 public class User {
@@ -10,12 +12,21 @@ public class User {
     private int passport;
 
 
-    public User(String name, String email, String phoneNumber, int passport, String id) {
+
+    public User(String name, String email, String phoneNumber, int passport, List<String> id) {
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
-        this.id = id;
+        this.id = UUID.randomUUID().toString();
         this.passport = passport;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
