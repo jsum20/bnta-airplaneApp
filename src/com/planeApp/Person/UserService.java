@@ -38,10 +38,10 @@ public class UserService {
         BookingSaved.userDetails(name, email, phoneNumber, passport);
 
     }
-    public void bookFlight(Flights flights) {
-        // display all flights
-        System.out.println("Here are all available flights: ");
-    }
+//    public void bookFlight(Flights flights) {
+//        // display all flights
+//        System.out.println("Here are all available flights: ");
+//    }
 
 
 }

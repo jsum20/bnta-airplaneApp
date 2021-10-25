@@ -26,7 +26,7 @@ public class Main {
         //5. Cancel Flights (not yet done)
         Scanner input = new Scanner(System.in);
         boolean flag = false;
-        while (!flag) {
+        while (!flag) { // whilst flag is false run code but break out of loop if true
             System.out.println("");
             System.out.println("Option 1: Register for a flight booking");
             System.out.println("Option 2: Book a flight");

@@ -41,26 +41,26 @@ public class FlightsService {
         BookingSaved.flightDetails(flightNumber, origin, destination);
     }
 
-    public void addFullBookedFlight() {
-        int flightNumber;
-        String origin;
-        String destination;
-
-        Scanner scan1 = new Scanner(System.in);
-        System.out.println("Enter the flight number:");
-        flightNumber = scan1.nextInt();
-
-        Scanner scan2 = new Scanner(System.in);
-        System.out.println("Enter the flight origin:");
-        origin = scan2.nextLine();
-
-        Scanner scan3 = new Scanner(System.in);
-        System.out.println("Enter the flight destination");
-        destination = scan3.nextLine();
-
-        Flights F = new Flights(flightNumber, origin, destination);
-        fullBookedFlights.add(F); // adding flight details as an array into flights array list
-    }
+//    public void addFullBookedFlight() {
+//        int flightNumber;
+//        String origin;
+//        String destination;
+//
+//        Scanner scan1 = new Scanner(System.in);
+//        System.out.println("Enter the flight number:");
+//        flightNumber = scan1.nextInt();
+//
+//        Scanner scan2 = new Scanner(System.in);
+//        System.out.println("Enter the flight origin:");
+//        origin = scan2.nextLine();
+//
+//        Scanner scan3 = new Scanner(System.in);
+//        System.out.println("Enter the flight destination");
+//        destination = scan3.nextLine();
+//
+//        Flights F = new Flights(flightNumber, origin, destination);
+//        fullBookedFlights.add(F); // adding flight details as an array into flights array list
+//    }
 
 
     public void displayAllFlights() {
