@@ -5,7 +5,10 @@ import com.planeApp.person.Nationality;
 import com.planeApp.person.Passport;
 import com.planeApp.person.UserService;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.*;
 
 public class Main {
@@ -13,8 +16,8 @@ public class Main {
         Random rand = new Random();
 
         UserService userService = new UserService();
-        Passport passport1 = new Passport(34655568, Nationality.BRITISH );
-        Passport passport2 = new Passport(35652567, Nationality.ITALIAN );
+        Passport passport1 = new Passport(34655568, Nationality.BRITISH);
+        Passport passport2 = new Passport(35652567, Nationality.ITALIAN);
         Passport passport3 = new Passport(35652567, Nationality.SPANISH);
 
         FlightsService flightsService = new FlightsService();
@@ -39,6 +42,22 @@ public class Main {
                 case "1":
                     userService.makeUser();
                     System.out.println("Thank you for registering, your details are now saved.");
+                    File file = new File("UserBooking.txt");
+                    Scanner scan = new Scanner(file);
+                    while (scan.hasNextLine()) {
+                        System.out.println(scan.nextLine());
+                    }
+                    Scanner scanner0 = new Scanner(System.in);
+                    System.out.println("What is your UUID?");
+                    String id = scanner0.nextLine();
+                    try {
+                        FileWriter fw = new FileWriter("FlightBooking.txt", true);
+                        PrintWriter pw = new PrintWriter(fw);
+                        pw.print( id + "\n");
+                        pw.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     break;
                 case "2":
                     flightsService.addNewFlight();
@@ -51,7 +70,6 @@ public class Main {
                     flightsService.displayBookedFlights();
                     break;
                 case "5":
-
                     break;
                 case "0":
                     flag = true;
@@ -59,8 +77,9 @@ public class Main {
                 default:
                     System.out.println("You entered an invalid option");
             }
-
         }
+    }
+}
 
 
 //        User user1 = new User("Jason", "jasonsum321@gmail.com", 07481555888F, UUID.randomUUID().toString(), passport1);
@@ -98,7 +117,7 @@ public class Main {
 //
 //        userService.makeUser(); // saved into file
 //        flightsService.displayFlights(flights);
-        // Command line - write Spain, store spain as n
+                    // Command line - write Spain, store spain as n
 //        Scanner Booking = new Scanner(System.in);
 //        System.out.println("Which flight do you want to book?");
 //        String f = Booking.nextLine();
@@ -120,6 +139,3 @@ public class Main {
 //        bookedFlights.add(flight);
 
 
-
-    }
-}
