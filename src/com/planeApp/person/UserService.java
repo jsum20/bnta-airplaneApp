@@ -34,7 +34,7 @@ public class UserService {
         User P = new User(name, email, phoneNumber, passport, UUID.randomUUID().toString());
         user.add(P);
 
-        BookingSaved.userDetails(name, email, phoneNumber, passport);
+        BookingSaved.userDetails(name, email, phoneNumber, passport, UUID.randomUUID().toString());
 
     }
 //    public void bookFlight(Flights flights) {

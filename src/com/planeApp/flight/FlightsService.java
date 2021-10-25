@@ -3,10 +3,7 @@ package com.planeApp.flight;
 import com.planeApp.booking.BookingSaved;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class FlightsService {
 //    List<Flights> listOfFlights = new ArrayList<>();
@@ -40,7 +37,7 @@ public class FlightsService {
 
 
 
-        BookingSaved.flightDetails(flightNumber, origin, destination);
+        BookingSaved.flightDetails(flightNumber, origin, destination, UUID.randomUUID().toString());
     }
 
 //    public void addFullBookedFlight() {
