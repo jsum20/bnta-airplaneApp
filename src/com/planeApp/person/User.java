@@ -1,7 +1,4 @@
-package com.planeApp.Person;
-
-import java.math.BigInteger;
-import java.util.UUID;
+package com.planeApp.person;
 
 public class User {
     private String name;

@@ -1,4 +1,4 @@
-package com.planeApp.Flight;
+package com.planeApp.flight;
 
 public enum AllFlights {
     LONDON_TO_NEW_YORK,

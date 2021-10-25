@@ -1,6 +1,6 @@
-package com.planeApp.Flight;
+package com.planeApp.flight;
 
-import com.planeApp.Booking.BookingSaved;
+import com.planeApp.booking.BookingSaved;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -35,8 +35,10 @@ public class FlightsService {
         System.out.println("Enter the flight destination:");
         destination = scan3.nextLine();
 
-        Flights F = new Flights(flightNumber, origin, destination);
-        flights.add(F); // adding flight details as an array into flights array list
+        Flights f = new Flights(flightNumber, origin, destination);
+        flights.add(f); // adding flight details as an array into flights array list
+
+
 
         BookingSaved.flightDetails(flightNumber, origin, destination);
     }
@@ -90,8 +92,19 @@ public class FlightsService {
         }
     }
 
-//    public void bookFlight() {
+//    public void cancelFlight() {
+//        String origin;
+//        String destination;
+//        System.out.println("To cancel the flight please enter the origin and destination of your flight.");
+//        Scanner scan2 = new Scanner(System.in);
+//        System.out.println("Enter the flight origin:");
+//        origin = scan2.nextLine();
+//
+//        Scanner scan3 = new Scanner(System.in);
+//        System.out.println("Enter the flight destination:");
+//        destination = scan3.nextLine();
 //        // no flights booked yet until a user books with his id
+//        Flights P = new Flights(flightNumber, origin, destination);
 //    }
 
 

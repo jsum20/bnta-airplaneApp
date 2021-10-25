@@ -1,4 +1,4 @@
-package com.planeApp.Person;
+package com.planeApp.person;
 
 public enum Nationality {
     BRITISH,

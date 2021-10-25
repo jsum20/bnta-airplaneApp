@@ -1,7 +1,6 @@
-package com.planeApp.Person;
+package com.planeApp.person;
 
-import com.planeApp.Booking.BookingSaved;
-import com.planeApp.Flight.Flights;
+import com.planeApp.booking.BookingSaved;
 
 import java.io.IOException;
 import java.util.ArrayList;

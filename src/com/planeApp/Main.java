@@ -1,9 +1,9 @@
 package com.planeApp;
 
-import com.planeApp.Flight.FlightsService;
-import com.planeApp.Person.Nationality;
-import com.planeApp.Person.Passport;
-import com.planeApp.Person.UserService;
+import com.planeApp.flight.FlightsService;
+import com.planeApp.person.Nationality;
+import com.planeApp.person.Passport;
+import com.planeApp.person.UserService;
 
 import java.io.IOException;
 import java.util.*;
@@ -49,6 +49,9 @@ public class Main {
                     break;
                 case "4":
                     flightsService.displayBookedFlights();
+                    break;
+                case "5":
+
                     break;
                 case "0":
                     flag = true;

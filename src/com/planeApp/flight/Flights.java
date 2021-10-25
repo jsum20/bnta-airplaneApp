@@ -1,4 +1,4 @@
-package com.planeApp.Flight;
+package com.planeApp.flight;
 
 public class Flights {
     private int flightNumber;
