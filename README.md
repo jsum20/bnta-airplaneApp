@@ -24,15 +24,15 @@ There is no right or wrong implementation discuss as a team the functionality an
 Bonus
 - Store Data to a file instead of an Array or List
 
-<h2>Lessons Learnt<h2>
+<h2>Lessons Learnt</h2>
 
-  Our first Java project collaborating in teams of three. We learnt a lot about how Java applications are built from scratch, with the use of a Trello board to manage and split tasks. A lot of time was spent on being able to generate a particular UUID for a user when they register and linking this UUID with the flight that they booked. 
+Our first Java project collaborating in teams of three. We learnt a lot about how Java applications are built from scratch, with the use of a Trello board to manage and split tasks. A lot of time was spent on being able to generate a particular UUID for a user when they register and linking this UUID with the flight that they booked.
   
-<h3>Future Improvements and workflow<h3>
+<h3>Future Improvements and workflow</h3>
   
   <ul>
-    <li>Using an interface class to make writing data into different data structures easier with the Override method, which introduces the idea of polymorphism<li>
-    <li>The use of Git branches which makes it easier to organise code and to avoid errors if everyone is pushing onto main<li>
-    <li>Adding Git ignore at the start to ignore the files that are unnecessary<li>
-  <ul>
+    <li>Using an interface class to make writing data into different data structures easier with the Override method, which introduces the idea of polymorphism</li>
+    <li>The use of Git branches which makes it easier to organise code and to avoid errors if everyone is pushing onto main</li>
+    <li>Adding Git ignore at the start to ignore the files that are unnecessary</li>
+  </ul>
     
