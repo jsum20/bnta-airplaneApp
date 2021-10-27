@@ -6,9 +6,6 @@ import java.io.IOException;
 import java.util.*;
 
 public class FlightsService {
-//    List<Flights> listOfFlights = new ArrayList<>();
-//    List<Flights> bookedFlights = new ArrayList<>();
-//    List<Flights> idBooking = new ArrayList<>();
 
     List<Flights> flights = new ArrayList<>();
     List<Flights> fullBookedFlights = new ArrayList<>();
@@ -104,52 +101,5 @@ public class FlightsService {
 
 
 }
-//        for (Flights flight : listOfFlights) {
-//            System.out.println(flight.toString());
-//        }
 
-
-//    public void displayBooking() {
-//        System.out.println(bookedFlights);
-//    }
-//
-//    public void idBooking() {
-//        Scanner scanner = new Scanner(System.in);
-//
-//        System.out.println("Enter your UUID to book flight");
-//
-//    }
-//
-//
-//    public void cancelFlight(Flights flight1) {
-//        bookedFlights.remove(flight1);
-//    }
-//
-//
-//
-//    public List<Flights> getListOfFlights() {
-//        return listOfFlights;
-//    }
-//
-//    public void setListOfFlights(List<Flights> listOfFlights) {
-//        this.listOfFlights = listOfFlights;
-//    }
-//
-//    public List<Flights> getBookedFlights() {
-//        return bookedFlights;
-//    }
-//
-//    public void setBookedFlights(List<Flights> bookedFlights) {
-//        this.bookedFlights = bookedFlights;
-//    }
-//
-//    public void displayFlights(Flights[] flights) {
-//        System.out.println("Choose your flight destination");
-//        for (Flights flight : flights) {
-//            listOfFlights.add(flight);
-//        }
-//        for (Flights flight : listOfFlights) {
-//            System.out.println(flight.toString());
-//        }
-//    }
 
